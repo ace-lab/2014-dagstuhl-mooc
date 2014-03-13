@@ -1,7 +1,53 @@
-% replace preamble with whatever style Dagstuhl uses....
-\documentclass{article}
+%This is a template for producing reports for "Dagstuhl Manifestos".
+%See dagman.pdf for furhter information.
+
+\documentclass[a4paper,UKenglish]{dagman}
+  %for A4 paper format use option "a4paper", for US-letter use option "letterpaper"
+  %for british hyphenation rules use option "UKenglish", for american hyphenation rules use option "USenglish"
+  %for section-numbered lemmas etc., use "numberwithinsect"
+
+\usepackage{microtype}%if unwanted, comment out or use option "draft"
+
+%Author macros: begin%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subject{Manifesto subject Here}
+\title{Massively Open Online Courses, Current State and Perspectives}
+\titlerunning{MOOCs and Online Learning}%optional
+
+\author[1]{Claude Kirchner}
+%% \author[2]{Joan R. Access}
+%% \affil[1]{Dummy University Computing Laboratory, Dummy Country
+%%   \texttt{open@dummyuni.org}}
+%% \affil[2]{Department of Informatics, Dummy College Address, Country
+%%   \texttt{access@dummycollege.org}}
+%% \authorrunning{J.Q. Open and J.R. Access}%optional
+
+\subjclass{Dummy classification: please check \url{http://www.acm.org/about/class/ccs98-html}. Cite, for example, as:  ``B.3.3 Performance Analysis and Design Aids, C.1.2 Multiple Data Stream Architectures (Multiprocessors)''}% mandatory: Please choose ACM 1998 classifications from http://www.acm.org/about/class/ccs98-html . E.g., cite as "F.1.1 Models of Computation". 
+\keywords{Dummy keywords: Please provide 1--5 keywords}% mandatory: Please provide 1-5 keywords
+
+\seminarnumber{14112}
+\semdata{03.--07.~January, 2011 -- \href{http://www.dagstuhl.de/10101}{www.dagstuhl.de/10101}}
+\additionaleditors{Armando Fox}%optional
+%Author macros: end%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Dagstuhl editorial office macros: begin%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\volumeinfo%(easychair interface)
+  {John Q. Open and Joan R. Access}%editors
+  {2}%number of editors
+  {A Manifesto Sample}%event
+  {1}%volume
+  {1}%issue
+  {1}%starting page number
+\DOI{10.4230/DagMan.1.1.1}%(DagRep.<issue no>.<volume no>.<firstpage>)
+%Dagstuhl editorial office macros: end%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+  \maketitle
+
+  \input{abstract}
+  \input{execsummary}
+
+  \tableofcontents
 
   % introduction
   % \input{introduction}
@@ -12,6 +58,7 @@
   % conclusions
   % \input{conclusions}
  
+  % replace with whatever bib style Dagstuhl uses
   \bibliographystyle{plain}
   \bibliography{manifesto}
 

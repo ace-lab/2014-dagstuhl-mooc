@@ -14,7 +14,10 @@ $(TARGET).pdf: $(wildcard *.tex)
 .PHONY: clean
 
 cleanup: 
-	@/bin/rm -f *.log *.aux *.blg *.bbl *.ind
+	@/bin/rm -f *.log *.aux *.blg *.bbl *.ind *.toc *.out
 
 clean: cleanup
 	@/bin/rm -f $(TARGET).pdf
+
+TAGS:
+	@etags *.tex
