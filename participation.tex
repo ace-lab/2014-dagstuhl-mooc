@@ -1,0 +1,184 @@
+\section{Our community should develop standards for participation metrics}
+
+%% section editor: Pierre Dillenbourg (revised by Pierre - 22 mars)
+
+%% TBD: Doug Fisher made numerous annotations/comments in the Google Doc
+%% about related resources/work that should be referenced.
+
+
+When governments, university administrators, instructors, students, and
+the general public consider a MOOC, measures of participation are
+critical in their perceptions and attitudes about the MOOC's educational
+value. For example, when participation is measured in terms of number of
+videos watched and assessments taken, there appears to be large
+attrition over time with virtually all MOOCs to date, regardless of form
+or initial enrollment. Interpreted naively, these observations can be
+taken as a negative aspect of MOOCs, but such measures fail to consider
+the goals of the learner and other factors that might distinguish
+subpopulations with very different participation patterns.
+Participation measures will inform assessments of (a) individual student
+learning outcomes, which is perhaps primary. But through these
+assessments, participation measures will also inform assessment of (b)
+cohorts of students; (c) resources, the utility of which depends in part
+on use of these resources, and the student outcomes that result; (d)
+instructors, whose quality depends on the outcomes of courses they
+teach; and (e) the quality of the MOOCs themselves and higher-level
+administrative and educational structures.  As yet, we know of no
+consensus, detailed inventory of variables for measuring participation
+in MOOCs, which could guide pedagogy, practice, and policy. There is
+important research to be done on defining measures of participation,
+studying the effect of these measures on the perceptions of different
+stakeholders, and research in computing areas to obtain and protect the
+kind of data that is important for highly nuanced, conditionalized
+measures of participation.  
+
+\subsection{Building blocks for deriving participation measures}
+
+A starting point for a more comprehensive picture of
+participation is measuring students' actions regarding: 
+
+\begin{itemize}
+
+\item MOOC resources,
+such as videos, assessments, readings and the like; 
+
+\item assessments, both
+formative and summative, both attempted and completed; 
+
+\item resource
+annotation, to include tagging video and textual sources; 
+
+\item resource
+creation (common in connectionist MOOCs), such as video and text; and
+
+\item communications with the instructors, assistants, MOOC platform company,
+and with other students.
+
+\end{itemize}
+
+These categories are not mutually exclusive (e.g., a discussion board
+post in response to another student post is both a communication action,
+but can also be viewed as a resource annotation, where the initial post
+is a resource). These categories are almost certainly not
+complete. Finally, each of these categories includes many
+sub-categories, as is suggested above (e.g., formative vs summative
+assessment). A rich assessment inventory will almost certainly be
+hierarchically structured, with many categories and sub-categories, and
+with fine grained measures possible, if not desirable.
+
+Importantly, within this rich set of variables will be \emph{base variables},
+which are value free and often continuous (e.g., how many videos
+watched, total quiz score); and interpreted variables, which are often
+discrete, even binary, and convey value or judgement about a
+participant's activity in a MOOC (e.g., pass/fail). In this chapter we
+are most interested in the possibilities for participation within a
+multidimensional space of base variables, with the understanding that
+interpreted variables can be introduced with thresholds that are
+particular to differing conditions, preferences, constraints, and goals.
+
+While independent measurements of and correlational analysis between
+different variables (e.g., video hours watched and final course score)
+enable important statistical relationships to be found, more causal
+interpretations can be aided by capturing \emph{traces} of student
+activities. A trace is a sequential or tree-based representation of a
+student's activities, and enables analysis beyond pairwise associations
+(e.g., ``\texttt{user1} read a post by \texttt{user2} directing them to
+\texttt{resource25},  and
+\texttt{user1} followed the recommendation''). By comparing student traces, for
+example through graph clustering or inductive logic programming, more
+complicated patterns of activities can be found across a population of
+students. While recording a student's behavior as a vector of variable
+values is a popular representation in data mining generally, traces and
+other higher-order representations need to be developed and explored
+further.  
+
+\subsection{The wealth of conditioning information}
+
+Participation patterns
+undoubtedly vary with many factors, and we should strive to capture, and
+explain variance on participation variables based on these many
+factors. In this section we briefly consider the MOOC design, attributes
+of individual students and student cohorts, and time, as major
+categories of independent variables that will condition findings on MOOC
+participation. An important insight is that participation can and should
+be a value or region in a rich and continuous multidimensional space.
+
+\textbf{MOOC Designs.} Even today, there are several recognized kinds of MOOCs
+(e.g., xMOOC vs iMOOC vs cMOOC), to say nothing of the MOOC types that
+will emerge in the coming years.  Rather than standardizing measures
+across diverse MOOC formats, harmonisation of measures that are best
+suited to the different types of MOOCs seems the better view. For
+example, resource creation by students will be relevant measures of
+participation to some MOOCs. Some MOOCs will be inherently more social,
+with requirements for collaboration, whereas others will not. Some
+measure simply will not apply to every type of MOOC. Thus, measures will
+apply differentially across MOOCs, and garnering a comprehensive set of
+measures across current and future MOOC formats will be a challenge. We
+recommend a catalog of such measures, perhaps in wiki form, which can be
+open to the research and practitioner communities and easily linked to
+other sources.  In addition to cataloging measures that may vary with
+format, there will hopefully be ``canonical'' measures that are
+independent of MOOC types, with the simplest of these being ``time spent''
+by the student on the MOOC (e.g., watching its videos, taking
+assessments, doing projects). While this is a simple measure to state,
+it may be very challenging to capture, because much of the time spent on
+a MOOC probably happens off the MOOC platform.  
+
+\textbf{Student characteristics.} Student characteristics influence
+participation. Primary among these characteristics are the motivations
+that the student has for taking a MOOC -- does the student intend to
+complete, or is the student there to sample the content only? Related to
+completion versus sampling goals, but distinct, is the level of mastery
+that a student hopes to achieve. If a student wishes to complete a
+course, can we capture information on whether a student returns to the
+MOOC after ``dropping'' it previously?  In addition to being critical for
+a descriptive understanding of student participation under many nuanced
+conditions, a rich characterization of students will inform
+prescriptions (e.g., suggestions) of how students might best work their
+way through MOOC material; who might be the best partners, peer
+reviewers, mentors, and instructors for students in different contexts;
+thus influencing participation patterns actively through recommender and
+other help systems. In other words, the many affordances that we want to
+create for students will drive the conditioning variables that will be
+measured.  
+
+\textbf{Time and other continuous dimensions.}  Although participation
+at a single point in time is of value, it is the detailed and real-time
+participation information that will be most relevant to both the
+educator and student. This data can be used to improve the learner
+experience and inform MOOC design making it more responsive and
+adaptive. This is especially the case in identifying different user
+types amongst MOOC students and potentially factoring this into the
+overall way the MOOC adapts to the different needs of individual
+students and the groups they belong to. Thus, for each of the dependent
+and conditioning variables that we alluded to above, we will want
+measures over time, annotated by events that have predictive value.
+Attention to the time dimension also invites analysis using traces,
+which was mentioned above. For example, student actions at one time
+point influence actions and outcomes at subsequent time points, all of
+which can be represented, processed, and compared by computational
+means.  Time is a primary, but certainly not the only, continuous
+dimension for which various measures of participation will be continuous
+functions rather than simply point values!
+
+\subsection{Challenges}
+
+ There are many challenges in defining participation, in
+obtaining data on participation, assessing it, reporting it, and
+eventually comparing participation analyses across MOOCs and
+MOOC-hosting platforms. A main challenge, described in the previous
+paragraphs, is the diversity of MOOCs and the diversity of types of
+participants. Another obvious challenge are privacy concerns that will
+stem from heavy instrumentation of MOOCs and MOOC platforms to collect
+data. The measurement of student activity may become intrusive for
+students concerned. What happens to participation measures if students
+are required to agree to be measured? How do we safeguard unintended
+privacy leaks through the use of detail at this level?  Despite these
+challenges, we believe is important for our community to develop
+participation metrics. An understanding of MOOC participation will bring
+a greater understanding of the impacts of external factors on learning
+in a MOOC: the subject matter of the MOOC, its duration and pace,
+lecturer, institutions and sponsors behind the MOOC, fees if any,
+transparency in students' data collection and use, and the availability
+of credits or certificates for completion.
+
