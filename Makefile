@@ -4,7 +4,7 @@ TARGET = manifesto
 
 all: $(TARGET).pdf cleanup
 
-$(TARGET).pdf: $(wildcard *.tex)
+$(TARGET).pdf: $(wildcard *.tex) $(TARGET).bib
 	pdflatex $(TARGET)
 	bibtex $(TARGET)
 	pdflatex $(TARGET)
