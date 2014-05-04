@@ -22,11 +22,6 @@ excellence, MOOCs allow one to reach and teach simultaneously tens of
 thousands and even hundreds of thousands of learners in a new
 pedagogical dynamic.
 
-\tbd{I don't understand what the following paragraph is trying to say.
-Which "few seem to be surfacing with an extremely important impact"?
-Are we talking about Coursera vs edX vs other platforms? Or university 
-efforts? Particularly popular courses? Or new teaching paradigms?}
-
 Of the numerous MOOCs initiatives that have recently emerged, especially
 in the US and Europe, a few seem to be surfacing with an extremely
 important impact. This creates a very new situation and indeed can be
@@ -63,13 +58,16 @@ MOOCs into university education, quality assurance and measures of
 success, and policies for access and privacy.
 
 \tbd{ck: Do we all agree with the next paragraph, proposed by John and me?}
-\tbd{John: I rewrote slightly.}
 
-The working group chose to make specific recommendations that are intended provoke discussion 
-and lead to better understanding of the core issues. This document represents the
-editors' best effort to capture the main positions put forward during the meeting,
-but may vary from individual opinions of individual participants.
-The eight positions identified and explored by participants are:
+% [ck: May  3 14] added on John's suggestion
+% this can also be moved to the acknowledgements section
+The working group chose to make specific recommendations that may or may not suit all institutions,
+but that we hope will provoke debate and lead to better understanding of the core issues. 
+% ck proposes to replace the sentence
+% The recommendations here do not necessarily represent unanimous policy recommendations or the result
+% of any voting process among the participants.
+% by:
+This text results of the contributions of all participants, but the final responsibility is the editors' one.
 
 \vspace{1ex}
 \textbf{Integration of MOOCs into university education}
@@ -92,10 +90,10 @@ credit for MOOCs
 \begin{enumerate}
 \setcounter{enumi}{3}
 
-\item Quality criteria for MOOCs should be developed
+\item Quality criteria for MOOCs should be developed 
 
 \item Standards should be developed for measuring
-  participation in MOOCs
+  participation in MOOCs 
 
 \item Return on investment in MOOCs is heavily university-dependent
 
@@ -106,7 +104,7 @@ credit for MOOCs
 \begin{enumerate}
 \setcounter{enumi}{6}
 
-\item MOOCs should provide universal access
+\item MOOCs should provide universal access 
 
 \item New data
 policies should be collectively negotiated
@@ -115,7 +113,7 @@ policies should be collectively negotiated
 
 
 
-%%% Local Variables:
+%%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "manifesto"
-%%% End:
+%%% End: 
