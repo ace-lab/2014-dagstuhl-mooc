@@ -1,0 +1,325 @@
+%This is a template for producing reports for "Dagstuhl Manifestos".
+%See dagman.pdf for furhter information.
+
+\documentclass[a4paper,UKenglish]{dagman}
+  %for A4 paper format use option "a4paper", for US-letter use option "letterpaper"
+  %for british hyphenation rules use option "UKenglish", for american hyphenation rules use option "USenglish"
+  %for section-numbered lemmas etc., use "numberwithinsect"
+
+\usepackage{microtype}%if unwanted, comment out or use option "draft"
+
+%Author macros: begin%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subject{FORUM / Manifesto from Dagstuhl Perspectives Workshop 14112}
+\title{FORUM / Massive Open Online Courses: Current State and Perspectives}
+%\titlerunning{MOOCs: Current State \& Perspectives}%optional
+
+\author[1]{Pierre Dillenbourg}
+  \affil[1]{EPFL, Switzerland   \texttt{pierre.dillenbourg@epfl.ch}}
+
+\author[2]{Armando Fox}
+  \affil[2]{University of California, Berkeley, USA  \texttt{fox@berkeley.edu}}
+
+\author[3]{Claude Kirchner}
+  \affil[3]{Inria, France   \texttt{claude.kirchner@inria.fr}}
+
+\author[4]{John Mitchell}
+  \affil[4]{Stanford University, USA  \texttt{john.mitchell@stanford.edu}}
+
+\author[5]{Martin Wirsing}
+  \affil[5]{Ludwig-Maximiliens-Universit\"{a}t M\"{u}nchen, Germany  \texttt{wirsing@lmu.de}}
+
+        
+
+%% add other authors here
+
+%% author info below should match that above:
+
+%Dagstuhl editorial office macros: begin%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\volumeinfo%(easychair interface)
+  {Pierre Dillenbourg and Armando Fox and Claude Kirchner and John Mitchell and Martin
+    Wirsing }%editors
+  {5}%number of editors
+  {A Manifesto Sample}%event
+  {1}%volume
+  {1}%issue
+  {1}%starting page number
+\DOI{10.4230/DagMan.1.1.1}%(DagRep.<issue no>.<volume no>.<firstpage>)
+%Dagstuhl editorial office macros: end%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% \authorrunning{J.Q. Open and J.R. Access}%optional
+
+% mandatory: Please choose
+% ACM 1998 classifications from
+% http://www.acm.org/about/class/ccs98-html . E.g., cite as "F.1.1
+% Models of Computation".  
+\subjclass{K.3 Computers and Education \tbd{More?}}
+
+% mandatory: Please provide 1-5 keywords
+\keywords{Massively open online courses, MOOC, SPOC, e-learning, education}
+
+\seminarnumber{14112}
+\semdata{10.--13.~March, 2014 -- \href{http://www.dagstuhl.de/14112}{www.dagstuhl.de/14112}}
+%% \additionaleditors{}%optional
+%Author macros: end%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% macros for ``Tbd''
+
+\newcommand{\tbd}[1]{{\colorbox{yellow}{\color{red} \textbf{TBD:} \protect{#1}}}}
+%\newcommand{\tbd}[1]{}
+
+\begin{document}
+
+  \maketitle
+
+%\input{abstract}
+\begin{abstract}
+
+  The rapid emergence and adoption of MOOCs (Massive Open Online Course) has raised new questions
+  and rekindled old debates in higher education.  Academic leaders are concerned about educational
+  quality, access to content, privacy protection for learner data, production costs and the proper
+  relationship between MOOCs and residential instruction, among other matters.  At the same time,
+  these same leaders see opportunities for the scale of MOOCs to support learning: faculty interest
+  in teaching innovation, better learner engagement through personalization, increased understanding
+  of student behavior through large-scale data analytics, wider access for continuing education
+  students and other nonresidential learners, and the possibility to enhance revenue or lower
+  educational costs.  Two years after ``the year of the MOOC'', this workshop was an opportunity to
+  summarizes the state of the art and the future directions of greatest interest as seen by an
+  international group of academic leaders.  Eight provocative positions are put forward, in hopes of
+  aiding policy makers, academics, administrators, and students regarding the potential future of
+  MOOCs in higher education.  The recommendations span a variety of topics including financial
+  considerations, pedagogical quality, and the social fabric.
+\end{abstract}
+
+%\section*{Executive Summary}
+\section{Introduction}
+
+Online education is not new; Massively Open Online Courses (MOOCs) are. 
+Much has been written
+about them in numerous recent reports and recommendations 
+\cite{gaebel-moocs-2013,uk.gov.mooc-2013,UUK-mooc-2013,
+ past-2013,InvasionoftheMOOCs-2014,mroe-2013-report,
+ moocs-expectations-and-reality}.
+Their uniquely powerful
+combination of classical digital teaching tools (videos, audios, graphics or slides), individualized
+tools for acquiring and validating knowledge, and appropriate use of dedicated social networks makes
+them a new and formidable means of accessing knowledge and education. If backed up with scientific
+and pedagogical excellence, MOOCs allow one to reach and teach simultaneously tens of thousands and
+even hundreds of thousands of learners in a new pedagogical dynamic.
+
+The computer science and informatics community has long collaborated with the teaching and knowledge
+dissemination community through the creation and deployment of technology for teaching and learning.
+However, MOOCs seem to represent a new level of engagement between these communities because of
+their scale, their links to economic and production systems in higher education, and the
+conversations about teaching that they have provoked, some of which may induce radical changes in
+teaching mechanisms. The consequences on transmission of culture and educational content, and on
+society as a whole, will be deep.
+
+The Perspectives Workshop on ``Massively Open Online Courses, Current State and Perspectives'' took
+place at Schloss Dagstuhl on March 10--13, 2014.  Twenty-three leading researchers and practitioners
+from informatics and pedagogical sciences presented and discussed current experiences and future
+directions, challenges, and visions for the influence of MOOCs on university teaching and learning.
+The first day of the workshop consisted of a series of presentations in which each participant
+presented those topics and developments he or she considered most relevant for the future
+development of MOOCs. On the second and third day the participants divided into several working
+groups according to the main thematic areas that had been identified on the first day.
+
+This manifesto summarizes the key findings of the workshop and provides a collection of research
+topics for MOOCs. The eight theses presented in the report can be divided into three categories: the
+integration of MOOCs into university education, quality assurance and measures of success, and
+policies for access and privacy.
+
+The working group chose to make specific recommendations that are intended provoke discussion and
+lead to better understanding of the core issues. The manifesto represents the editors' best effort
+to capture the main positions put forward during the meeting, but may vary from the opinions of
+individual participants.  
+
+
+\section{Integration of MOOCs into university education}
+
+\subsubsection*{Universities should refactor residential education using MOOCs}
+
+The MOOC-accelerated paradigm shift in education, comparable to shifts in the news media and the
+music industry, is forcing an unbundling and rebundling of educational components. In the case of
+higher education, we must rethink long-established modes of interaction, teaching roles, and
+structures in a way that recognizes that the sources of knowledge and therefore the roles of
+instructors and campuses have changed.
+
+We see the most important shifts as follows:
+
+\begin{itemize}
+
+\item With the wide availability of high-quality, (often) free, and easy-to-reuse content online,
+  most instructors' primary responsibility shifts \emph{from creating content to creating context}.
+
+\item Rearrangements of residential course elements (lectures, recitations, labs, and so on) and new
+  teaching roles beyond simply ``instructor'' and ``teaching assistant'' will better fit this new
+  instructional modality.  One challenge of this reorganization is changes to campus infrastructure,
+  but one facilitator is that inexpensive video production will empower domain experts to create
+  better materials to prepare and train the new teaching roles.
+
+\item The absence of the ``sage on the stage'' will open new ways to foster teacher and learner
+  commitment.  Campuses should focus less on conveying content-oriented skills and more on
+  social/professional skills, such as collaborative work and perspective-broadening activities, to
+  complement independent study and discovery.
+
+\end{itemize} 
+
+\subsubsection*{New pedagogical approaches should be developed to take advantage of scale}
+
+MOOCs offer new opportunities for scaling up education to very large numbers of students: they can
+reach up to 200.000 students, compared with the approximately 500 in a typical lecture or seminar
+room.  This scale is made possible in part by the ``open'' features of MOOCs and their worldwide
+accessibility and leads to the two following opportunities.
+
+\begin{description}
+\item[Rich despite scale] We care about pedagogical diversity at scale and this leads us to the
+  following recommendation expressed as a research question: How can we create a broad range of
+  effective pedagogies at massive scale, and efficiently contribute to achieve 21st century
+  competencies? The challenge is to explore which of these pedagogies can work effectively at
+  massive scale or what we need to do to deal with scale (new services, metrics, and so on) in
+  technology-enabled environment, while retaining their educational power and accessibility.
+  Researchers have already recognized the importance of scale as a new first-class aspect of
+  pedagogy, as evidenced by new scholarly conferences such as Learning At~Scale
+  (\url{http://learningatscale.acm.org}).
+\item[Rich because of scale] The new technological opportunities for multiple degrees of scale
+  create new challenges, which should benefit from studies and lessons learnt regarding scale in
+  telematics engineering, human networks, as well as networked learning. We therefore recommend that
+  research efforts be directed to invent new pedagogical approaches that are intrinsically designed
+  to take advantage of scale. We believe these two approaches of (a) scaling rich activities
+  initially designed for low scale and (b) inventing new scale-powered activities, are complementary
+  to the construction of new landscapes of learning through ambitious research programs.
+\end{description}
+
+\subsubsection*{Universities should move towards providing official credit for MOOCs}
+
+\tbd{XX}
+
+
+\section{Quality assurance and measures of success}
+
+\subsubsection*{Quality criteria for MOOCs should be developed}
+Although the question of quality of a MOOC should, in principle, be no different than the question
+of quality applied to any course produced by an educational provider, MOOCs have additional
+properties that make the question of MOOC quality unique. First, MOOCs are usually free or very low
+cost to the student. Second, the massive scale has meant that the offering institutions have seen
+MOOCs as a vehicle for publicity and reputational enhancement as much as an educational device.
+
+\subsubsection*{Standards should be developed for measuring participation in MOOCs}
+
+When governments, university administrators, instructors, students, and the general public consider
+a MOOC, measures of participation are critical in their perceptions and attitudes about the MOOC's
+educational value. For example, when participation is measured in terms of number of videos watched
+and assessments taken, there appears to be large attrition over time with virtually all MOOCs to
+date, regardless of form or initial enrollment. Interpreted na\"{i}vely, these observations can be
+taken as a negative aspect of MOOCs, but such measures fail to consider the goals of the learner and
+other factors that might distinguish subpopulations with very different participation patterns.
+Participation measures will inform assessments of (a) individual student learning outcomes, which is
+perhaps primary. But through these assessments, participation measures will also inform assessment
+of (b) cohorts of students; (c) resources, the utility of which depends in part on use of these
+resources, and the student outcomes that result; (d) instructors, whose quality depends on the
+outcomes of courses they teach; and (e) the quality of the MOOCs themselves and higher-level
+administrative and educational structures.  As yet, we know of no consensus, detailed inventory of
+variables for measuring participation in MOOCs, which could guide pedagogy, practice, and policy.
+There is important research to be done on defining measures of participation and other educational
+variables for MOOCs~\cite{deboer-ho-reconceptualizing}, studying the effect of these measures on the
+perceptions of different stakeholders, and on how best to obtain and protect the learner data needed
+for highly nuanced, conditionalized measures of participation.
+
+\subsubsection*{Return on investment in MOOCs is heavily university-dependent}
+
+MOOCs require considerable investment of capital and human resources.  Whether this investment will
+yield effective return is heavily dependend on each institution's situation and priorities; a
+corollary is that there is no single formula for computing return on investment or determining the
+point of diminishing returns.
+
+Universities operate in different contexts and so the opportunities open to any single university
+may be different to those of others, due to differences in funding (fees vs.\ no fees), legal
+frameworks (whether online learning is recognised as legitimate higher education), competiveness of
+their student recruitment against other universities, and so on.  Each university must assess its
+own possible ROI by balancing these constraints against the costs of developing and delivering
+MOOCs.  A recent report~\cite{moocs-expectations-and-reality} offers a rich set of interview-based
+perspectives on the costs and benefits of MOOCs as perceived and experienced by over 80 faculty,
+administrators, researchers, and other actors from over 60 institutions in North America, Europe,
+and China.
+
+\section{Data access and privacy}
+
+\subsubsection*{MOOCs should provide universal access}
+By 2014 the world is expected to have more mobile-device accounts than it has inhabitants.  It is
+therefore safe to assume that many learners will have them: user data from FutureLearn shows about
+20\% of learners access the courses from mobile devices. 
+
+Techniques such as Responsive Web Design can help provide an optimal viewing experience across a
+variety of devices.  However, more important are the new affordances of these emerging devices, such
+as smartwatches, smartbands, smartsensors, and so on.  Besides offering ``anytime, anywhere'' access
+to learning materials such as podcasts and videos, mobile, wearable and ubiquitous technologies can
+link physical and virtual environments and support continuous learner engagement through
+notifications and instant messaging. In technology-enhanced learning, such devices can not only
+provide information access, but also produce or collect content and communicate with each other.  We
+therefore see an opportunity to provide continuity in time and space to promote seamless learning,
+allowing online and technology-enhanced learning to ``break free'' of classroom constraints.
+
+
+\subsubsection*{New data policies should be collectively negotiated}
+MOOCs generate vast amounts of data: data about the content of the course (videos, quizzes,
+exercises, slides, \ldots), data about the students (clickstream data, answers to questions,
+discussion forums, \ldots) and data about the professor and his or her pedagogical team. As any user
+data collected by other online platforms, MOOCs raise serious concerns on possible breaches of the
+user's privacy. We therefore propose a general principle: a learner's data belongs to the learner.
+Accordingly to this principle, learners should be able to easily access and visualize any data
+recorded about them, such as interaction traces.  Learners should be able to share their data with
+others as well as analyze it themselves, with access to the same analysis tools that MOOC platforms
+or instructors use.  And a learner should be allowed to delete any subset of his data: he will lose
+the advantages of having it analyzed, but that would be a personal choice.
+
+But datasets do also constitute great opportunities. At the individual level, this data is necessary
+for adapting learning activities to individual needs. At the collective level, the data supports
+extracting knowledge about the effectiveness of the MOOC components, in order to improve the
+concerned MOOC or to acquire general pedagogical knowledge. When sharing MOOC data one should be
+attentive for the data to be accompanied by a semantic description of what was collected, that is,
+what each piece of data meant in its original context. Such a description would also be necessary to
+address the ethical issues already raised.
+
+Finally, let us note that universities negotiate one-by-one with MOOC platforms, which puts them in
+a rather weak position, despite the fact that they provide content that in has been developed over
+many years with their own (often public) funding.  Universities and learners would be better served
+if universities could move towards a collective negotiation, perhaps even at a national level for
+countries that have specific privacy laws.  We therefore recommend that associations of universities
+collect data privacy and data ownership concerns across their members institutions.
+
+\section{Research questions}
+Today a MOOC is primarily organized around lectures by a university instructor; it is taught as an
+xMOOC in a traditional lecture-oriented format. One consequence is that MOOCs have a rather rigid
+structure and suffer from high drop-out rates.  Future MOOCs should provide better learning
+experiences; they should be more enjoyable, adaptive, evaluable, accessible, usable by handicapped
+learners, aware of cultural diversity and ethical context, and so on.
+
+These requirements create new research problems and new methods to address some of them including:
+ 
+\begin{itemize}
+\item \textbf{Better support for pedagogical methods}
+\item \textbf{Better support for learner diversity}
+\item \textbf{Better analytics of course data}
+
+\end{itemize}
+
+More research is also needed to understand the societal and economic impact of MOOCs. Interesting
+research questions include ethics about data as well as learners or teachers behaviors, how to
+transform on-line communities into geographically confined ones, and what MOOC business models will
+balance the efforts of private industry and public services.
+
+
+  % replace with whatever bib style shall be used
+  \bibliographystyle{plain}
+  \bibliography{manifesto}
+
+\end{document}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
